@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.tvieux.newworlds.Inscription_Coordonnee"
+    tools:showIn="@layout/activity_inscription__coordonnee">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INSCRIPTION"
+        android:id="@+id/textView7"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coordonnée"
+        android:id="@+id/textView8"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/textView7"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextadresse"
+        android:layout_below="@+id/textView8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:hint="Adresse" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editTextCP"
+        android:layout_below="@+id/editTextadresse"
+        android:layout_centerHorizontal="true"
+        android:hint="Code postal" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editTextTelephone"
+        android:layout_below="@+id/editTextCP"
+        android:layout_centerHorizontal="true"
+        android:hint="Téléphone" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editTextEMail"
+        android:hint="Adresse E-mail"
+        android:layout_below="@+id/editTextTelephone"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suivant"
+        android:id="@+id/buttonSuivant2"
+        android:layout_below="@+id/editTextEMail"
+        android:layout_marginTop="51dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextVille"
+        android:layout_below="@+id/editTextEMail"
+        android:layout_alignStart="@+id/editTextEMail"
+        android:layout_alignEnd="@+id/editTextEMail"
+        android:hint="Ville" />
+
+</RelativeLayout>
